@@ -1,0 +1,44 @@
+.dino {
+    width: 60px;
+    height: 60px;
+    background-image: url(images/dino.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background: url(images/cactus.png);
+}
+
+.game-over {
+    text-align: center;
+    margin-top: 15%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.background {
+    position: absolute;
+    background-image: url(images/background.png);
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-repeat: repeat;
+    animation: walkright 600s infinite linear;
+}
+
+@keyframes walkright {
+
+    from {
+        background-position: 7000%;
+    }
+
+    to {
+        background-position: 0;
+    }
+    
+}
